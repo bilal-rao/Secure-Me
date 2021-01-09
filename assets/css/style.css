@@ -1,0 +1,209 @@
+body {
+	width: 22rem;
+	max-height: 20rem;
+	overflow-y: auto;
+	/* background-image: linear-gradient(to right, rgba(79, 172, 254, 0.8) 0%, rgba(0, 242, 254, 0.7) 100%); */
+	background: #f9fafc;
+	min-height: 292px;
+}
+
+.loader-overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	left: 0;
+	z-index: 10;
+	text-align: center;
+	display: none;
+}
+
+.loader-overlay img {
+	transform: translateY(-65%);
+	position: relative;
+	top: 50%;
+	width: 100%;
+}
+
+.success-overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	left: 0;
+	z-index: 10;
+	text-align: center;
+	display: none;
+}
+
+.success-overlay .inner-content {
+	transform: translateY(-50%);
+	position: relative;
+	top: 40%;
+}
+
+.success-overlay .inner-content img {
+	width: 60px;
+}
+
+.success-overlay .inner-content h4 {
+	font-size: 16px;
+	color: #5f5f5f;
+	margin-top: 10px;
+}
+
+.header {
+	background-image: linear-gradient(to right, #3797ec 0%, #48e7ef 100%);
+}
+
+.conatainer {
+	margin-bottom: 15px;
+}
+
+.logo-container {
+	text-align: center;
+}
+
+.logo-container img {
+	width: 160px;
+	margin: 12px 0;
+}
+
+#files-list {
+	max-height: 20rem;
+	overflow: auto;
+	padding: 10px 0;
+}
+
+#files-list .placeholder-container {
+	text-align: center;
+}
+
+#files-list .placeholder-container img {
+	margin: 12px 0;
+}
+
+#files-list .placeholder-container h4 {
+	font-size: 15px;
+	color: #797777;
+}
+
+#files-list .placeholder-container p {
+	font-size: 12px;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 20px;
+	color: #949494;
+	line-height: 15px;
+}
+
+#files-list #files-progress {
+	width: 100%;
+	margin: 5px 0;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	padding: 6px 10px;
+}
+
+#files-list #files-progress .icon-container {
+	width: 50px;
+	float: left;
+}
+
+#files-list #files-progress .icon-container img {
+	width: 35px;
+	margin: 8px 0;
+}
+
+#files-list #files-progress .progress-container {
+	width: calc(100% - 80px);
+	display: inline-block;
+}
+
+#files-list #files-progress .progress-container .fileName {
+	font-size: 11px;
+	display: inline-block;
+	text-overflow: ellipsis;
+	width: 70%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#files-list #files-progress .progress-container .percentage {
+	font-size: 10px;
+	text-align: right;
+	color: #333;
+}
+
+#files-list #files-progress .progress-container .progress {
+	height: 8px;
+	width: 100%;
+}
+
+#files-list .error h4 {
+	font-size: 16px;
+	color: #ff7575;
+}
+
+#files-list .error p {
+	color: #5d5d5d;
+	line-height: 5px;
+}
+
+#files-list #files-progress .action-container {
+	width: 20px;
+	float: right;
+}
+
+#files-list #files-progress .action-container svg {
+	font-size: 26px;
+	margin: 14px 0px;
+	position: relative;
+	left: -4px;
+}
+
+#files-list #files-progress .action-container .bi-check {
+	fill: #28a745;
+}
+
+#files-list #files-progress .action-container .bi-circle-slash {
+	fill: #494949;
+	font-size: 20px;
+  top: 3px;
+}
+
+#files-list #files-progress .action-container .bi-x {
+	fill: #f44336;
+	cursor: pointer;
+}
+
+#files-list .cancelled-file {
+  background-color: rgba(70, 70, 70, 0.2);
+  padding-bottom: 18px !important;
+  opacity: 0.7;
+}
+
+#files-list .cancelled-file .progress-bar {
+	background-color: #757575 !important;
+}
+
+#files-list .cancelled-file .percentage {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 2px 0 #40c0ee;
+	border-radius: 0;
+	background: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px #40c0ee;
+	background: #45dbef;
+	border-radius: 0;
+}

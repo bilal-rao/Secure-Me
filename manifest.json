@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Secure Me",
+  "description": "This extension is intent to block all google adds!",
+  "icons": {
+    "16": "assets/images/app-icons/popupLogo.png",
+    "48": "assets/images/app-icons/popupLogo.png",
+    "128": "assets/images/app-icons/popupLogo.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/images/app-icons/popupLogo.png",
+    "default_popup": "index.html"
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "scripts": ["assets/js/background.js"]
+  }
+}
